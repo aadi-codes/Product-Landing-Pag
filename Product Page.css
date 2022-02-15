@@ -1,0 +1,341 @@
+html {
+    font-size: 8vmax;
+    background-color: #55d1e47a;
+}
+
+/* color pallet 
+#FAD3B4 Peach
+#242F44 Blue Clay
+#F9614A Raam
+#EE744B Orange
+*/
+
+
+#head {
+    background-color: #f6b98bde;
+    position: fixed;
+    top: 10px;
+    right: -1px;
+    display: grid;
+    width: 100%;
+    height: 11vh;
+    width: 96vw;
+    margin: 2px;
+    border-radius: 15px 0px 0px 15px;
+    grid-template-columns: repeat(2, 26), repeat(3, 16%);
+    grid-template-rows: 100%;
+}
+
+.head-span {
+    font-size: 30%;
+}
+
+a {
+    text-decoration: none;
+    color: #32476e;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #EE744B;
+}
+
+#logo-image {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: auto auto auto 0px;
+    padding: 0px;
+    height: 110%;
+}
+
+#logo-name {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: auto auto auto 0px;
+    font-family: Patua One;
+    font-size: 38%;
+}
+
+#contact {
+    grid-area: 1 / 3 / 2 / 4;
+    margin: auto 0px auto auto;
+    font-family: Lekton;
+}
+
+#about {
+    grid-area: 1 / 4 / 2 / 5;
+    margin: auto;
+    font-family: Lekton;
+}
+
+#price {
+    grid-area: 1 / 5 / 2 / 6;
+    margin: auto auto auto 0px;
+    font-family: Lekton;
+}
+
+#help {
+    margin-top: 16vh;
+    z-index: -1;
+    text-align: center;
+}
+
+#know {
+    font-size: 50%;
+    color: #E46855;
+    text-decoration: underline 3px rgb(61, 60, 60);
+    font-family: Ubuntu Mono;
+}
+
+
+
+::placeholder {
+    margin: auto;
+    font-style: italic;
+}
+
+#input-submit{
+   font-size: 0.6ex;
+   height: 41px;
+   border: white 0px solid;
+   border-radius: 10px;
+   font-family: Dokdo;
+}
+
+#input-submit:hover{
+    border: black 1px solid;
+    cursor:pointer ;
+}
+#input-email{
+    width: 45vw;
+    height: 35px;
+    font-size: 0.4ex;
+    border: white 0px solid;
+    border-radius: 10px;
+}
+
+#why-ipol-container {
+    display: block;
+    width: 60vw;
+    margin: 15px auto 10px auto;
+    border: 6px solid #F9614A;
+    border-radius: 25px;
+}
+
+#why-ipol {
+    display: grid;
+    grid-template-columns: 15vw 40vw;
+    grid-template-rows: repeat(4, 15vw);
+    justify-content: center;
+    align-items: center;
+}
+
+.features h3 {
+    font-size: 27%;
+    font-family: Orbitron;
+    text-decoration: underline #F9614A 3px;
+}
+
+.features p {
+    font-size: 18%;
+}
+
+.feature-image {
+    display: block;
+    width: 10vw;
+    border-radius: 100px;
+}
+
+#image-premium {
+    grid-area: 1/1/2/2;
+}
+
+#image-flexible {
+    grid-area: 2/1/3/2;
+}
+
+#image-brand {
+    grid-area: 3/1/4/2;
+}
+
+#image-shipment {
+    grid-area: 4/1/5/2;
+}
+
+#premium {
+    grid-area: 1/2/2/3;
+}
+
+#flexible {
+    grid-area: 2/2/3/3;
+}
+
+#brand {
+    grid-area: 3/2/4/3;
+}
+
+#shipment {
+    grid-area: 4/2/5/3;
+}
+/* by ADITYA MISHRA github:aadi-codes */
+iframe {
+    display: block;
+    width: 70vw;
+    height: 30vmax;
+    margin: auto;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#product-head {
+    font-size: 95%;
+    text-align: center;
+    color: #F9614A;
+    margin-bottom: 0px;
+}
+
+#product-container {
+    border: 6px solid #F9614A;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 0px;
+    font-family: Ubuntu Mono;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-image {
+    width: 21vw;
+    padding: 0px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: #EE744B solid 0px;
+    border-radius: 25px;
+    scale: 1;
+    transition: border-radius 0.4s;
+    transition: z-index 0.1ms;
+    transition: box-shadow 0.4s;
+}
+
+.product-image:hover {
+    transform: scale(1.25);
+    padding: 0px;
+    z-index: 1;
+    box-shadow: 3.5px 3.5px 3.5px 3.5px rgba(95, 94, 94, 0.634);
+}
+
+#products-names {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: auto;
+    font-size: 65%;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    text-decoration: underline #EE744B 2px;
+    color: #EE744B;
+}
+
+#more {
+    font-size: 40%;
+    font-family: Dokdo;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 4px;
+    border: #f6b98b 2px solid;
+    border-radius: 10px;
+    background-color: #f6b98b;
+    z-index: 0;
+
+}
+
+#more:hover{
+    animation-name: popup;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes popup{
+    0% {
+        transform: scale(1.1);
+        background-color: #f6b98b;
+        border: #f6b98b 2px solid;
+        box-shadow: 0px 0px 0px 0px rgba(85, 82, 82, 0.6);
+    }
+
+    100% {
+        transform: scale(1.3);
+        background-color: #32476e;
+        border: #32476e solid 2px;
+        box-shadow: 4px 4px 3px 3px rgba(85, 82, 82, 0.6);
+    }
+}
+
+a:hover {
+    text-decoration: none;
+    color: #EE744B;
+}
+
+#footer{
+    font-size: 20%;
+}
+#since{
+    font-family: Lekton;
+}
+
+#rudra{
+    font-size: 150%;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50vw;
+    margin-left: auto;
+}
+
+li{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.follow{
+    width: 8ex;
+}
+#facebook{
+    width: 10ex;
+}
+
+#follow-us
+{
+    font-size: 190%;
+    font-family: Patua One;
+}
+
+#hr1 {
+    width: 70vw;
+    height: 2px;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+
+#hr2{
+    width: 95vw;
+    height: 1px;
+    margin-bottom: 0px;
+    background-color: black;
+}
+
