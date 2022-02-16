@@ -9,9 +9,14 @@ html {
 #F9614A Raam
 #EE744B Orange
 */
+ body{
+     margin: 15px;
+     margin-top:150px;
+     padding: 5px;
+     border-radius: 20px;
+ }
 
-
-#head {
+#nav-bar {
     background-color: #f6b98bde;
     position: fixed;
     top: 10px;
@@ -26,7 +31,7 @@ html {
     grid-template-rows: 100%;
 }
 
-.head-span {
+.nav-link {
     font-size: 30%;
 }
 
@@ -40,7 +45,7 @@ a:hover {
     color: #EE744B;
 }
 
-#logo-image {
+#header-img {
     grid-area: 1 / 1 / 2 / 2;
     margin: auto auto auto 0px;
     padding: 0px;
@@ -72,8 +77,8 @@ a:hover {
     font-family: Lekton;
 }
 
-#help {
-    margin-top: 16vh;
+#form {
+    margin-top: 5px;
     z-index: -1;
     text-align: center;
 }
@@ -92,7 +97,7 @@ a:hover {
     font-style: italic;
 }
 
-#input-submit{
+#submit{
    font-size: 0.6ex;
    height: 41px;
    border: white 0px solid;
@@ -100,11 +105,11 @@ a:hover {
    font-family: Dokdo;
 }
 
-#input-submit:hover{
+#submit:hover{
     border: black 1px solid;
     cursor:pointer ;
 }
-#input-email{
+#email{
     width: 45vw;
     height: 35px;
     font-size: 0.4ex;
@@ -176,7 +181,7 @@ a:hover {
     grid-area: 4/2/5/3;
 }
 /* by ADITYA MISHRA github:aadi-codes */
-iframe {
+#video {
     display: block;
     width: 70vw;
     height: 30vmax;
@@ -333,9 +338,14 @@ li{
 }
 
 #hr2{
-    width: 95vw;
+    width: 88vw;
     height: 1px;
     margin-bottom: 0px;
     background-color: black;
 }
 
+@media screen and (min-width: 600px) {
+    body {
+      background-color: rgb(162, 221, 162);
+    }
+  }
