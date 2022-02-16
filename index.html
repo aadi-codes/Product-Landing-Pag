@@ -16,36 +16,35 @@
 </head>
 
 <body>
-    <header>
-        <div id="head">
-            <img class="head-span" id="logo-image" src="./assets/ipol logo.png" alt="ipol india shoe soles logo">
-
-            <span class="head-span" id="logo-name">
+    <header id="header">
+        <nav id="nav-bar">
+            <img class="nav-link" id="header-img" src="./assets/ipol logo.png" alt="ipol india shoe soles logo">
+            <span class="nav-link" id="logo-name">
                 <a href="https://www.ipolindia.com/" target="_blank">
                     IPOL INDIA
                 </a>
             </span>
 
-            <span class="head-span" id="contact">
+            <span class="nav-link" id="contact">
                 <a href="https://www.google.com/maps/dir/28.606464,77.0768896/ipol+india/@28.708324,77.0316014,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390d071e0f050835:0x51194a3341d1c261!2m2!1d77.0563099!2d28.7831404"
                     target="_blank">
                     Direction
                 </a>
             </span>
-            <span class="head-span" id="about">
+            <span class="nav-link" id="about">
                 <a href="#iframe">
                     About
                 </a>
             </span>
-            <span class="head-span" id="price">
+            <span class="nav-link" id="price">
                 <a href="#br3">
                     Products
                 </a>
             </span>
-        </div>
+        </nav>
     </header>
 
-    <div id="help">
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post" enctype="text/plain">
         <span id="span-know">
             <label for="email" id="know">
                 High Class TPR Shoe Soles
@@ -53,12 +52,12 @@
         </span>
         <br>
         <span id="span-email">
-            <input type="email" name="email" id="input-email" placeholder="Input Email & we will contact you">
+            <input type="email" name="email" id="email" placeholder="Input Email & we will contact you" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         </span>
         <span id="span-submit">
-            <input type="submit" id="input-submit" value="Let's get Started">
+            <input type="submit" id="submit" value="Let's get Started" >
         </span>
-    </div>
+    </form>
     <div id="why-ipol-container">
         <div id="why-ipol">
             <span id="image-premium">
@@ -101,7 +100,7 @@
         </div>
     </div>
     <br>
-    <iframe id="iframe"width="560" src="https://www.youtube-nocookie.com/embed/jEtB3LqjPzI" title="IPOL INDIA" frameborder="0"
+    <iframe id="video"width="560" src="https://www.youtube-nocookie.com/embed/jEtB3LqjPzI" title="IPOL INDIA" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
     </iframe>
